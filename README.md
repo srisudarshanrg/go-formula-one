@@ -1,15 +1,17 @@
-# go-handlers-template
-This is a setup template for a Go project
-
-## Problem
-Everytime I start doing a project in Go, it takes a significant amount of time to handlers the entire project. So, I am not able to concentrate on doing the project itself.
-
-## Solution
-I have created this repository as a starter template for Go project, to save time in setting up the project itself. I have saved myself a significant amount of time
+# go-formula-one
+This is a web app I created about formula one. It gives information about past and present drivers and teams. It also displays the all the 2024 teams and their points, standings, etc. You can also use it to compare different drivers and teams, and view them as a timeline.
 
 ## Features
- - App configuration to enhance speed and performance
- - Template Cache to save template load time
- - Option to use template cache or not using boolean value in app config
- - App configuration access to all packages via an access.go file in each package that requires it.
- - Distributed file system for each functionality.
+ - Provides information about past and present drivers and teams.
+ - Allows you to compare drivers and teams.
+ - Information and championship standings of 2024 Formula One teams.
+ - Neat and clean UI for easy viewing.
+ - Fully functional
+
+## Tools Used
+ - Go
+ - PostgreSQL
+ - HTML, CSS, JavaScript
+ - [AlwaysData](https://alwaysdata.com)
+ - [FontAwesome](https://fontawesome.com)
+ - [Bootstrap](https://getbootstrap.com)

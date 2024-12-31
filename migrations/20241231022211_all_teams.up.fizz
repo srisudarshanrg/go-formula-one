@@ -1,0 +1,12 @@
+create_table("all_teams") {
+    t.Column("id", "integer", {primary: true})
+    t.Column("name", "string")
+    t.Column("nationality", "string")
+    t.Column("year_joined", "integer")
+    t.Column("poles", "integer")
+    t.Column("podiums", "integer")
+    t.Column("wins", "integer")
+    t.Column("championships", "integer")
+    t.Column("notable_cars", "string")
+    t.Column("championship_winning_drivers", "string")
+}

@@ -1,0 +1,13 @@
+create_table("drivers") {
+    t.Column("id", "integer", {primary: true})
+    t.Column("name", "string")
+    t.Column("age", "integer")
+    t.Column("nationality", "string")
+    t.Column("pole_positions", "integer")
+    t.Column("podiums", "integer")
+    t.Column("wins", "integer")
+    t.Column("championships", "integer")
+    t.Column("years_driven_in_formula_one", "string")
+    t.Column("teams_driven_for", "string")
+    t.Column("number_of_years_driven", "integer")
+}

@@ -1,0 +1,74 @@
+id,name,age,nationality,pole_positions,podiums,wins,championships,years_driven_in_formula_one,teams_driven_for,number_of_years_driven
+1,Max Verstappen,27,Netherlands,22,47,49,3,2015-2024,"Toro Rosso, Red Bull Racing",9
+2,Lewis Hamilton,39,United Kingdom,104,188,103,7,2007-2024,"McLaren, Mercedes",18
+3,Charles Leclerc,27,Monaco,18,23,5,0,2018-2024,"Sauber, Ferrari",7
+4,Sergio Pérez,34,Mexico,1,23,3,0,2011-2024,"Sauber, McLaren, Force India, Racing Point, Red Bull Racing",14
+5,Carlos Sainz Jr.,29,Spain,1,21,1,0,2015-2024,"Toro Rosso, Renault, McLaren, Ferrari",9
+6,Lando Norris,24,United Kingdom,1,12,0,0,2019-2024,"McLaren",6
+7,George Russell,26,United Kingdom,4,8,1,0,2019-2024,"Williams, Mercedes",6
+8,Fernando Alonso,43,Spain,22,103,32,2,2001-2024,"Minardi, Renault, McLaren, Ferrari, Alpine",24
+9,Esteban Ocon,27,France,1,10,1,0,2016-2024,"Manor, Force India, Renault, Alpine",9
+10,Pierre Gasly,28,France,2,10,1,0,2017-2024,"Toro Rosso, Red Bull Racing, Alpine",8
+11,Kimi Räikkönen,44,Finland,18,103,21,1,2001-2021,"Sauber, McLaren, Ferrari, Lotus, Alfa Romeo Racing",20
+12,Danny Ricciardo,35,Australia,3,10,8,0,2011-2024,"HRT, Toro Rosso, Red Bull Racing, Renault, McLaren, AlphaTauri",14
+13,Valtteri Bottas,35,Finland,20,67,10,0,2013-2024,"Williams, Mercedes, Alfa Romeo Racing",12
+14,Nico Hülkenberg,36,Germany,0,0,0,0,2010-2024,"Williams, Force India, Sauber, Renault, Racing Point, Haas",14
+15,Lance Stroll,25,Canada,0,8,1,0,2017-2024,"Williams, Aston Martin",8
+16,Zhou Guanyu,24,China,0,1,0,0,2022-2024,"Alfa Romeo Racing",3
+17,Mick Schumacher,25,Germany,0,0,0,0,2021-2022,"Haas",2
+18,Robert Kubica,39,Poland,1,1,0,0,2006-2019,"BMW Sauber, Renault, Lotus, Williams",13
+19,Daniel Kvyat,29,Russia,0,3,0,0,2014-2020,"Toro Rosso, Red Bull Racing, AlphaTauri",7
+20,Kevin Magnussen,31,Denmark,1,2,0,0,2014-2024,"McLaren, Renault, Haas",10
+21,Antonio Giovinazzi,30,Italy,0,0,0,0,2017-2022,"Sauber, Alfa Romeo Racing",6
+22,Alexander Albon,28,Thailand,0,3,0,0,2019-2024,"Toro Rosso, Red Bull Racing, Williams",6
+23,Nick de Vries,29,Netherlands,0,0,0,0,2022-2023,"AlphaTauri",2
+24,Juan Pablo Montoya,48,Colombia,13,19,7,0,2001-2006,"Williams, McLaren, Renault",6
+25,David Coulthard,53,United Kingdom,12,62,13,0,1994-2008,"Williams, McLaren, Red Bull Racing",15
+26,Mark Webber,47,Australia,13,42,9,0,2002-2013,"Minardi, Red Bull Racing",12
+27,Rubens Barrichello,51,Brazil,14,68,11,0,1993-2011,"Jordan, Stewart, Ferrari, Honda, Brawn GP, Williams",19
+28,Jacques Villeneuve,53,Canada,13,23,11,1,1996-2006,"Williams, BAR, Renault, Sauber",11
+29,Mika Häkkinen,56,Finland,26,51,20,2,1991-2001,"Lotus, McLaren",11
+30,Jarno Trulli,50,Italy,0,17,1,0,1997-2011,"Minardi, Renault, Toyota, Lotus",15
+31,Heikki Kovalainen,42,Finland,1,3,0,0,2007-2013,"Renault, McLaren, Lotus, Caterham",7
+32,Nelsinho Piquet,38,Brazil,0,1,0,0,2008-2009,"Renault, Toro Rosso",2
+33,Timo Glock,41,Germany,0,1,0,0,2004-2012,"Toyota, Marussia",9
+34,Adrian Sutil,41,Germany,0,0,0,0,2006-2014,"Spyker, Force India",9
+35,Paul di Resta,37,United Kingdom,0,0,0,0,2011-2013,"Force India",3
+36,Esteban Gutiérrez,32,Mexico,0,0,0,0,2013-2016,"Sauber, Haas",4
+37,Vijay Mallya,69,India,0,0,0,0,2005-2013,"Force India",7
+38,Jean-Eric Vergne,33,France,0,0,0,0,2014-2015,"Toro Rosso",2
+39,Bertrand Gachot,60,Belgium,0,0,0,0,1990-1995,"Onyx, Jordan",6
+40,Ricardo Zonta,49,Brazil,0,0,0,0,1999-2004,"BAR, Toyota",5
+41,Giancarlo Fisichella,51,Italy,0,14,0,0,1996-2009,"Minardi, Jordan, Benetton, Sauber, Renault, Force India",14
+42,Romain Grosjean,38,France,0,10,0,0,2009-2020,"Renault, Lotus, Haas",12
+43,Carlos Reutemann,78,Argentina,12,12,6,0,1972-1982,"Brabham, Ferrari, Lotus, Williams",11
+44,James Hunt,45,United Kingdom,14,23,7,1,1973-1979,"Hesketh, McLaren, Ferrari",7
+45,Niki Lauda,70,Austria,24,54,25,3,1971-1985,"Ferrari, McLaren, Brabham",15
+46,Jackie Stewart,84,United Kingdom,17,27,6,3,1965-1973,"BRM, Matra, Tyrrell",9
+47,Jim Clark,60,United Kingdom,33,25,25,2,1960-1968,"Lotus",9
+48,John Surtees,83,United Kingdom,8,17,6,1,1952-1972,"Cooper, Ferrari, Lola",21
+49,Phil Hill,91,United States,1,13,3,1,1958-1967,"Ferrari",10
+50,Graham Hill,62,United Kingdom,14,14,14,2,1958-1975,"Lotus, BRM, Shadow",18
+51,Jochen Rindt,44,Austria,6,8,6,1,1964-1970,"Brabham, Lotus",7
+52,Chris Amon,79,New Zealand,1,0,0,0,1963-1976,"Ferrari, Matra, March",13
+53,Dan Gurney,86,United States,4,6,4,0,1959-1970,"Ferrari, Porsche, Brabham",12
+54,Jo Bonnier,57,Sweden,0,0,0,0,1959-1971,"Cooper, Porsche, Lotus",13
+55,Johnny Herbert,59,United Kingdom,1,9,3,0,1989-2000,"Benetton, Sauber, Stewart, Jaguar, Honda, Ferrari",12
+56,Derek Warwick,66,United Kingdom,0,0,0,0,1981-1993,"Tyrrell, Renault, Arrows, Lotus",13
+57,Martin Brundle,64,United Kingdom,0,9,0,0,1984-1996,"Tyrrell, Zakspeed, Benetton, Jordan, Ligier, McLaren",13
+58,Kenny Acheson,63,United Kingdom,0,0,0,0,1984-1985,"Tyrrell",2
+59,Stefan Johansson,63,Sweden,0,0,0,0,1986-1991,"Tyrrell, Ferrari, Ligier, McLaren",6
+60,Eric Broadley,75,United Kingdom,0,0,0,0,1959-1974,"Lola",16
+61,Graham McRae,82,New Zealand,0,0,0,0,1968-1973,"McLaren",5
+62,Peter Revson,40,United States,2,6,0,0,1964-1974,"McLaren, Shadow",8
+63,Chris Balfe,58,United Kingdom,0,0,0,0,1977-1978,"Tyrrell",2
+64,David Purley,69,United Kingdom,0,0,0,0,1973-1977,"Surtees",5
+65,Danny Sullivan,68,United States,1,0,0,0,1983-1988,"Tyrrell",5
+66,Michael Andretti,61,United States,0,1,0,0,1993-1994,"McLaren",2
+67,Luca Badoer,53,Italy,0,0,0,0,1993-2010,"Minardi, Ferrari",7
+68,Martin Donnelly,57,United Kingdom,0,0,0,0,1990-1991,"Lotus",2
+69,Giuseppe Farina,90,Italy,1,9,5,1,1950-1955,"Alfa Romeo",6
+70,Luigi Musso,73,Italy,0,0,0,0,1955-1958,"Ferrari",3
+71,Alberto Ascari,80,Italy,5,13,6,2,1950-1952,"Ferrari",3
+72,Bruce McLaren,56,New Zealand,0,1,0,0,1958-1969,"McLaren",7
+73,Jim Clark,60,United Kingdom,33,25,25,2,1960-1968,"Lotus",9

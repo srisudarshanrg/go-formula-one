@@ -1,0 +1,9 @@
+create_table("current_teams") {
+    t.Column("id", "integer", {primary: true})
+    t.Column("name", "string")
+    t.Column("drivers", "string")
+    t.Column("total_points", "integer")
+    t.Column("constructors_championship_position", "integer")
+    t.Column("highest_points_haul", "integer")
+    t.Column("championship_winner", "bool")
+}
