@@ -1,6 +1,7 @@
 package validations
 
 import (
+	"database/sql"
 	"log"
 	"strconv"
 
@@ -42,7 +43,7 @@ func PasswordEqualConfirmPassword(password string, confirmPassword string) {
 }
 
 // UserExists checks if a user already exists with same username in database
-func UsernameExists(username string) {
+func UsernameExists(db *sql.DB, username string) {
 	query := `select * from users where username=$1`
 	results, err := db.Exec(query, username)
 	if err != nil {
@@ -63,7 +64,7 @@ func UsernameExists(username string) {
 }
 
 // EmailExists checks if a user already exists with same email or email in database
-func EmailExists(email string) {
+func EmailExists(db *sql.DB, email string) {
 	query := `select * from users where email=$1`
 	results, err := db.Exec(query, email)
 	exists, _ := results.RowsAffected()

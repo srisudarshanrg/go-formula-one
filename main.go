@@ -7,15 +7,15 @@ import (
 
 	"github.com/alexedwards/scs/v2"
 	"github.com/go-chi/chi"
-	"github.com/srisudarshanrg/go-setup-template/server/config"
-	"github.com/srisudarshanrg/go-setup-template/server/database"
-	"github.com/srisudarshanrg/go-setup-template/server/functions"
-	"github.com/srisudarshanrg/go-setup-template/server/handlers"
-	"github.com/srisudarshanrg/go-setup-template/server/render"
-	"github.com/srisudarshanrg/go-setup-template/server/validations"
+	"github.com/srisudarshanrg/go-formula-one/server/config"
+	"github.com/srisudarshanrg/go-formula-one/server/database"
+	"github.com/srisudarshanrg/go-formula-one/server/functions"
+	"github.com/srisudarshanrg/go-formula-one/server/handlers"
+	"github.com/srisudarshanrg/go-formula-one/server/render"
+	"github.com/srisudarshanrg/go-formula-one/server/validations"
 )
 
-const portNumber = ":{put_your_port_number_here}"
+const portNumber = ":2221"
 
 var session *scs.SessionManager
 var appConfig config.AppConfig
@@ -33,7 +33,9 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer db.Close()
+	if err = db.Ping(); err != nil {
+		log.Fatal(err)
+	}
 
 	// template cache handlers
 	templateCache, err := render.CreateTemplateCache()
@@ -50,13 +52,13 @@ func main() {
 
 	// handlers repository
 	handlerRepo := handlers.HandlerRepository{
-		AppConfig: appConfig,
+		AppConfig: &appConfig,
 	}
-	handlers.RepositoryAccesshandlers(handlerRepo)
+	handlers.RepositoryAccesshandlers(&handlerRepo)
 
 	// app config access
-	functions.AppConfigAccessFunctions(appConfig)
-	validations.AppConfigAccessValidations(appConfig)
+	functions.AppConfigAccessFunctions(&appConfig)
+	validations.AppConfigAccessValidations(&appConfig)
 
 	// routes
 	server := http.Server{

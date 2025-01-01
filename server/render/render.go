@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/srisudarshanrg/go-setup-template/server/config"
-	"github.com/srisudarshanrg/go-setup-template/server/models"
+	"github.com/srisudarshanrg/go-formula-one/server/config"
+	"github.com/srisudarshanrg/go-formula-one/server/models"
 )
 
 var appConfig config.AppConfig
@@ -18,7 +18,7 @@ func AppConfigAccessRender(a config.AppConfig) {
 }
 
 // RenderTemplate executes a template from the template cache based on the passed template name
-func RenderTemplate(w http.ResponseWriter, tmpl string, templateData models.TemplateData) error {
+func RenderTemplate(w http.ResponseWriter, tmpl string, templateData *models.TemplateData) error {
 	var templateCache map[string]*template.Template
 	var err error
 
