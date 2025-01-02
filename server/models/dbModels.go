@@ -17,6 +17,21 @@ type Driver struct {
 	UpdatedAt         interface{}
 }
 
+// CurrentDrivers is the model for a current drivers object in the database
+type CurrentDrivers struct {
+	ID                 int
+	Name               string
+	Number             int
+	Position           int
+	Points             int
+	Team               string
+	TeamColor          string
+	PercentagePoints   float64
+	ChampionshipWinner bool
+	CreatedAt          interface{}
+	UpdatedAt          interface{}
+}
+
 // CurrentTeams is the model for a current teams object in the database
 type CurrentTeams struct {
 	ID                   int

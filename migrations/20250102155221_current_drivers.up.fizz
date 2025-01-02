@@ -1,0 +1,11 @@
+create_table("current_drivers") {
+    t.Column("id", "integer", {primary: true})
+    t.Column("name", "string")
+    t.Column("number", "integer")
+    t.Column("position", "integer")
+    t.Column("points", "integer")
+    t.Column("team", "string")
+    t.Column("team_color", "string")
+    t.Column("percentage_points_contributed", "float")
+    t.Column("championship_winner", "bool")
+}

@@ -12,8 +12,15 @@ import (
 // Home is the handler for the home page
 func (app *HandlerRepository) Home(w http.ResponseWriter, r *http.Request) {
 	var data = make(map[string]interface{})
+
 	// current teams
 	currentTeams, err := functions.GetCurrentTeams(app.AppConfig.Database)
+	if err != nil {
+		log.Println(err)
+	}
+
+	// current drivers
+	currentDrivers, err := functions.GetCurrentDrivers(app.AppConfig.Database)
 	if err != nil {
 		log.Println(err)
 	}
@@ -54,12 +61,14 @@ func (app *HandlerRepository) Home(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 	}
 
+	data["currentDrivers"] = currentDrivers
+
+	data["currentTeams"] = currentTeams
+
 	data["driverChampionships"] = driversByChampionships
 	data["driverWins"] = driversByWins
 	data["driverPodiums"] = driversByPodiums
 	data["driverPoles"] = driversByPoles
-
-	data["currentTeams"] = currentTeams
 
 	data["allTeamsChampionships"] = allTeamsByChampionships
 	data["allTeamsWins"] = allTeamsByWins

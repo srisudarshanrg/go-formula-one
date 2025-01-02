@@ -50,6 +50,49 @@ func GetDriversByAchievements(db *sql.DB, achievementName string) ([]models.Driv
 	return drivers, nil
 }
 
+// GetCurrentDrivers gets all the rows from the current_drivers table, which contains data only about drivers in 2024
+func GetCurrentDrivers(db *sql.DB) ([]models.CurrentDrivers, error) {
+	getCurrentDriversQuery := `select * from current_drivers`
+	rows, err := db.Query(getCurrentDriversQuery)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	var drivers []models.CurrentDrivers
+
+	for rows.Next() {
+		var (
+			id, number, position, points int
+			name, team, teamColor        string
+			percentagePoints             float64
+			championshipWinner           bool
+			createdAt, updatedAt         interface{}
+		)
+
+		err = rows.Scan(&id, &name, &number, &position, &points, &team, &teamColor, &percentagePoints, &championshipWinner, &createdAt, &updatedAt)
+		if err != nil {
+			return nil, err
+		}
+
+		drivers = append(drivers, models.CurrentDrivers{
+			ID:                 id,
+			Name:               name,
+			Number:             number,
+			Position:           position,
+			Points:             points,
+			Team:               team,
+			TeamColor:          teamColor,
+			PercentagePoints:   percentagePoints,
+			ChampionshipWinner: championshipWinner,
+			CreatedAt:          createdAt,
+			UpdatedAt:          updatedAt,
+		})
+	}
+
+	return drivers, nil
+}
+
 // GetCurrentTeams gets all the rows from the current_teams table, which contains data only about teams in 2024
 func GetCurrentTeams(db *sql.DB) ([]models.CurrentTeams, error) {
 	getCurrentTeamsQuery := `select * from current_teams`

@@ -1,0 +1,35 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    color: #fff;
+}
+
+.current-year {
+    padding: 0.5%;
+    padding-top: 1%;
+}
+
+.current-year h1 {
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+}
+
+.drivers {
+    height: 60vh;
+    overflow-y: scroll;
+    padding-right: 2%;
+}
+
+.driver {
+    margin-top: 2%;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.teams-table-div {
+    height: 60vh;
+    overflow-y: scroll;
+    padding-right: 2%;
+}

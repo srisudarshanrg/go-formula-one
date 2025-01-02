@@ -1,7 +1,7 @@
 id,name,drivers,total_points,constructors_championship_position,highest_points_haul,championship_winner
-1,McLaren Mercedes,"Lando Norris, Oscar Piastri",666,1,58,false
+1,McLaren Mercedes,"Lando Norris, Oscar Piastri",666,1,58,true
 2,Scuderia Ferrari,"Charles Leclerc, Carlos Sainz Jr.",652,2,44,false
-3,Oracle Red Bull Racing Honda RBPT,"Max Verstappen, Sergio Pérez",589,3,44,true
+3,Oracle Red Bull Racing Honda RBPT,"Max Verstappen, Sergio Pérez",589,3,44,false
 4,Mercedes AMG Petronas,"Lewis Hamilton, George Russell",468,4,43,false
 5,Aston Martin Aramco Mercedes,"Fernando Alonso, Lance Stroll",94,5,27,false
 6,BWT Alpine Renault,"Esteban Ocon, Pierre Gasly",65,6,25,false

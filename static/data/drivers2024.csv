@@ -1,0 +1,25 @@
+id,name,number,position,points,team,team_color,percentage_points_contributed,championship_winner
+1,Max Verstappen,1,1,437,Red Bull Racing Honda RBPT,#1E41FF,74.2,true
+2,Lando Norris,4,2,374,McLaren Mercedes,#FF8700,56.2,false
+3,Charles Leclerc,16,3,356,Ferrari,#DC0000,55.1,false
+4,Oscar Piastri,81,4,292,McLaren Mercedes,#FF8700,43.8,false
+5,Carlos Sainz,55,5,290,Ferrari,#DC0000,44.9,false
+6,George Russell,63,6,245,Mercedes,#00D2BE,52.3,false
+7,Lewis Hamilton,44,7,223,Mercedes,#00D2BE,47.7,false
+8,Sergio Perez,11,8,152,Red Bull Racing Honda RBPT,#1E41FF,25.8,false
+9,Fernando Alonso,14,9,70,Aston Martin,#006F62,100.0,false
+10,Pierre Gasly,10,10,42,Alpine,#0090FF,50.6,false
+11,Nico Hulkenberg,27,11,41,Haas,#B6BABD,57.7,false
+12,Yuki Tsunoda,22,12,30,AlphaTauri,#2B4562,100.0,false
+13,Lance Stroll,18,13,24,Aston Martin,#006F62,34.3,false
+14,Esteban Ocon,31,14,23,Alpine,#0090FF,27.7,false
+15,Kevin Magnussen,20,15,16,Haas,#B6BABD,22.5,false
+16,Alexander Albon,23,16,12,Williams,#005AFF,100.0,false
+17,Daniel Ricciardo,3,17,12,AlphaTauri,#2B4562,100.0,false
+18,Oliver Bearman,92,18,7,Haas,#B6BABD,9.9,false
+19,Franco Colapinto,96,19,5,Williams,#005AFF,41.7,false
+20,Zhou Guanyu,24,20,4,Alfa Romeo,#900000,100.0,false
+21,Liam Lawson,40,21,4,AlphaTauri,#2B4562,100.0,false
+22,Valtteri Bottas,77,22,0,Alfa Romeo,#900000,0.0,false
+23,Logan Sargeant,2,23,0,Williams,#005AFF,0.0,false
+24,Jack Doohan,47,24,0,Alpine,#0090FF,0.0,false
