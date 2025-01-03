@@ -41,6 +41,7 @@ type CurrentTeams struct {
 	ConstructorsPosition int
 	HighestPointsHaul    int
 	ChampionshipWinner   bool
+	LogoLink             string
 	CreatedAt            interface{}
 	UpdatedAt            interface{}
 }
@@ -59,4 +60,18 @@ type AllTeams struct {
 	ChampionshipWinningDrivers string
 	CreatedAt                  interface{}
 	UpdatedAt                  interface{}
+}
+
+// CurrentTracks is the model for a current track object in the database
+type CurrentTracks struct {
+	ID              int
+	Name            string
+	Length          int
+	NumberCorners   int
+	NumberStraights int
+	NumberDRSZones  int
+	Year            int
+	Country         string
+	CreatedAt       interface{}
+	UpdatedAt       interface{}
 }

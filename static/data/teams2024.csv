@@ -1,11 +1,11 @@
-id,name,drivers,total_points,constructors_championship_position,highest_points_haul,championship_winner
-1,McLaren Mercedes,"Lando Norris, Oscar Piastri",666,1,58,true
-2,Scuderia Ferrari,"Charles Leclerc, Carlos Sainz Jr.",652,2,44,false
-3,Oracle Red Bull Racing Honda RBPT,"Max Verstappen, Sergio Pérez",589,3,44,false
-4,Mercedes AMG Petronas,"Lewis Hamilton, George Russell",468,4,43,false
-5,Aston Martin Aramco Mercedes,"Fernando Alonso, Lance Stroll",94,5,27,false
-6,BWT Alpine Renault,"Esteban Ocon, Pierre Gasly",65,6,25,false
-7,Moneygram Haas Ferrari,"Kevin Magnussen, Nico Hülkenberg",58,7,25,false
-8,Visa Cashapp RB,"Daniel Ricciardo, Yuki Tsunoda",46,8,25,false
-9,Williams Mercedes,"Alexander Albon, Logan Sargeant",17,9,25,false
-10,Kick Sauber,"Valtteri Bottas, Zhou Guanyu",4,10,25,false
+id,name,drivers,total_points,constructors_championship_position,highest_points_haul,championship_winner,logo
+1,McLaren Mercedes,"Lando Norris, Oscar Piastri",666,1,58,true,"https://i.pinimg.com/474x/6b/bf/bb/6bbfbb01f06ebaf5eba2700e9846a433.jpg"
+2,Scuderia Ferrari,"Charles Leclerc, Carlos Sainz Jr.",652,2,44,false,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbJEzqJDpq-Hpr33jie52xQZP9z2gwomXVuA&s"
+3,Oracle Red Bull Racing Honda RBPT,"Max Verstappen, Sergio Pérez",589,3,44,false,"https://w1.pngwing.com/pngs/1010/119/png-transparent-red-bull-logo-senaptec-red-bull-air-race-world-championship-new-york-red-bulls-red-bull-gmbh-energy-drink-advertising-air-racing.png"
+4,Mercedes AMG Petronas,"Lewis Hamilton, George Russell",468,4,43,false,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqW-FZaS7v214PtVf7HYC7eMfV54W2cuJANg&s"
+5,Aston Martin Aramco Mercedes,"Fernando Alonso, Lance Stroll",94,5,27,false,"https://i.pinimg.com/originals/c0/bf/d9/c0bfd988ccd3fd65f78ac954890ca13d.png"
+6,BWT Alpine Renault,"Esteban Ocon, Pierre Gasly",65,6,25,false,"https://upload.wikimedia.org/wikipedia/commons/7/7e/Alpine_F1_Team_Logo.svg"
+7,Moneygram Haas Ferrari,"Kevin Magnussen, Nico Hülkenberg",58,7,25,false,"https://cdn.mos.cms.futurecdn.net/uuQxV8xeSFh3PpnuzAyKKV.png"
+8,Visa Cashapp RB,"Daniel Ricciardo, Yuki Tsunoda",46,8,25,false,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoUXPbxNeEZVl-7KSp_LExqq-pFohJ6Jn-ow&s"
+9,Williams Mercedes,"Alexander Albon, Logan Sargeant",17,9,25,false,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMFd9MXixy2t_NnR6kzw3zTr66SUtMOK3QRg&s"
+10,Kick Sauber,"Valtteri Bottas, Zhou Guanyu",4,10,25,false,"https://pbs.twimg.com/profile_images/1838256124438421505/F6SzatG3_400x400.png"

@@ -5,7 +5,7 @@
 {{end}}
 
 {{define "css"}}
-    <link rel="stylesheet" href="/static/css/home.css.css">
+    <link rel="stylesheet" href="/static/css/home.css">
 {{end}}
 
 {{define "content"}}
@@ -17,7 +17,15 @@
                 <div class="drivers">
                     {{$drivers := index .Data "currentDrivers"}}
                     {{range $driver := $drivers}}
-                        <div class="driver" style="border: 3px solid {{$driver.TeamColor}};">
+                        <style>
+                            #driver-{{$driver.ID}}:hover {
+                                transform: scale(0.99);
+                                cursor: pointer;
+                                transition: 0.3s;
+                                background-color: {{$driver.TeamColor}};
+                            }
+                        </style>
+                        <div class="driver" style="border: 3px solid {{$driver.TeamColor}};" id="driver-{{$driver.ID}}">
                             <h5>{{$driver.Position}}. <span style="color: rgb(150, 150, 150);">#{{$driver.Number}}</span> {{$driver.Name}}</h5>
                             <h6>{{$driver.Points}} points</h6>
                             <h6>{{$driver.Team}}</h6>
@@ -40,7 +48,7 @@
                         {{range $team := $teams}}
                             <tr>
                                 <td>{{$team.ConstructorsPosition}}</td>
-                                <td>{{$team.Name}}</td>
+                                <td><img src="{{$team.LogoLink}}" alt="{{$team.Name}}" width="30"> {{$team.Name}}</td>
                                 <td>{{$team.Drivers}}</td>
                                 <td>{{$team.TotalPoints}}</td>
                             </tr>
@@ -49,5 +57,19 @@
                 </div>
             </div>
         </div>
+
+        <div class="tracks">
+            <h2 style="text-align: center;">Tracks</h2>
+            {{$tracks := index .Data "currentTracks"}}
+            <div class="all-tracks" style="margin-top: 1%;">
+                {{range $track := $tracks}}
+                    <div class="track" style="margin-top: 1%;">
+                        <h5>{{$track.Name}}</h5>
+                    </div>
+                {{end}}
+            </div>
+        </div>
     </div>
+
+    <hr>
 {{end}}

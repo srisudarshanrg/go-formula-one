@@ -61,9 +61,17 @@ func (app *HandlerRepository) Home(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 	}
 
+	// tracks
+	currentTracks, err := functions.GetCurrentTracks(app.AppConfig.Database)
+	if err != nil {
+		log.Println(err)
+	}
+
 	data["currentDrivers"] = currentDrivers
 
 	data["currentTeams"] = currentTeams
+
+	data["currentTracks"] = currentTracks
 
 	data["driverChampionships"] = driversByChampionships
 	data["driverWins"] = driversByWins

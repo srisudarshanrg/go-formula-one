@@ -1,0 +1,25 @@
+id,name,length,number_corners,number_straights,number_drs_zones,year,country
+1,Bahrain International Circuit,5.412,15,4,3,2004,Bahrain
+2,Jeddah Corniche Circuit,6.174,27,3,3,2021,Saudi Arabia
+3,Albert Park Circuit,5.278,14,4,4,1996,Australia
+4,Suzuka International Racing Course,5.807,18,2,1,1987,Japan
+5,Shanghai International Circuit,5.451,16,2,2,2004,China
+6,Miami International Autodrome,5.412,19,3,3,2022,United States
+7,Imola Circuit,4.909,19,2,1,1980,Italy
+8,Circuit de Monaco,3.337,19,1,1,1950,Monaco
+9,Circuit Gilles Villeneuve,4.361,14,4,3,1978,Canada
+10,Circuit de Barcelona-Catalunya,4.675,16,2,2,1991,Spain
+11,Red Bull Ring,4.318,10,3,2,1970,Austria
+12,Silverstone Circuit,5.891,18,4,2,1950,United Kingdom
+13,Hungaroring,4.381,14,2,1,1986,Hungary
+14,Circuit de Spa-Francorchamps,7.004,19,2,2,1925,Belgium
+15,Circuit Zandvoort,4.259,14,2,2,1952,Netherlands
+16,Monza Circuit,5.793,11,4,2,1950,Italy
+17,Baku City Circuit,6.003,20,2,2,2016,Azerbaijan
+18,Marina Bay Street Circuit,5.063,23,2,3,2008,Singapore
+19,Circuit of the Americas,5.513,20,2,2,2012,United States
+20,Autódromo Hermanos Rodríguez,4.304,17,2,2,1963,Mexico
+21,Interlagos Circuit,4.309,15,3,2,1973,Brazil
+22,Las Vegas Strip Circuit,6.120,17,4,2,2023,United States
+23,Lusail International Circuit,5.380,16,2,3,2004,Qatar
+24,Yas Marina Circuit,5.281,21,2,2,2009,United Arab Emirates

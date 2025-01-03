@@ -107,12 +107,12 @@ func GetCurrentTeams(db *sql.DB) ([]models.CurrentTeams, error) {
 	for rows.Next() {
 		var (
 			id, totalPoints, constructorsPosition, highestPointsHaul int
-			name, drivers                                            string
+			name, drivers, logoLink                                  string
 			championshipWinner                                       bool
 			createdAt, updatedAt                                     interface{}
 		)
 
-		err = rows.Scan(&id, &name, &drivers, &totalPoints, &constructorsPosition, &highestPointsHaul, &championshipWinner, &createdAt, &updatedAt)
+		err = rows.Scan(&id, &name, &drivers, &totalPoints, &constructorsPosition, &highestPointsHaul, &championshipWinner, &logoLink, &createdAt, &updatedAt)
 		if err != nil {
 			return nil, err
 		}
@@ -125,6 +125,7 @@ func GetCurrentTeams(db *sql.DB) ([]models.CurrentTeams, error) {
 			ConstructorsPosition: constructorsPosition,
 			HighestPointsHaul:    highestPointsHaul,
 			ChampionshipWinner:   championshipWinner,
+			LogoLink:             logoLink,
 			CreatedAt:            createdAt,
 			UpdatedAt:            updatedAt,
 		})
@@ -215,4 +216,44 @@ func GetAllTeamsByNumberAchievements(db *sql.DB, achievementName string) ([]mode
 	}
 
 	return allTeams, nil
+}
+
+// GetCurrentTracks gets all the current tracks from the current tracks table
+func GetCurrentTracks(db *sql.DB) ([]models.CurrentTracks, error) {
+	getCurrentTracksQuery := `select * from current_tracks`
+	rows, err := db.Query(getCurrentTracksQuery)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	var tracks []models.CurrentTracks
+
+	for rows.Next() {
+		var (
+			id, length, numberCorners, numberStraights, numberDRSZones, year int
+			name, country                                                    string
+			createdAt, updatedAt                                             interface{}
+		)
+
+		err = rows.Scan(&id, &name, &length, &numberCorners, &numberStraights, &numberDRSZones, &year, &country, &createdAt, &updatedAt)
+		if err != nil {
+			return nil, err
+		}
+
+		tracks = append(tracks, models.CurrentTracks{
+			ID:              id,
+			Name:            name,
+			Length:          length,
+			NumberCorners:   numberCorners,
+			NumberStraights: numberStraights,
+			NumberDRSZones:  numberDRSZones,
+			Year:            year,
+			Country:         country,
+			CreatedAt:       createdAt,
+			UpdatedAt:       updatedAt,
+		})
+
+	}
+	return tracks, nil
 }
