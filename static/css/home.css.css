@@ -53,10 +53,16 @@ body {
     height: 10vh;
     transition: 0.3s;
     padding: 4%;
+    color: #fff;
+    border: none;
 }
 
 .track:hover {
     background-color: rgb(17, 17, 17);
     cursor: pointer;
     transition: 0.3s;
+}
+
+.modal {
+    font-family: "Roboto", sans-serif;
 }

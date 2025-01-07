@@ -7,4 +7,5 @@ create_table("current_tracks") {
     t.Column("number_drs_zones", "integer")
     t.Column("year", "integer")
     t.Column("country", "string")
+    t.Column("image", "string")
 }

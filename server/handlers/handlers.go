@@ -18,49 +18,11 @@ func (app *HandlerRepository) Home(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Println(err)
 	}
-
 	// current drivers
 	currentDrivers, err := functions.GetCurrentDrivers(app.AppConfig.Database)
 	if err != nil {
 		log.Println(err)
 	}
-
-	// drivers
-	driversByChampionships, err := functions.GetDriversByAchievements(app.AppConfig.Database, "championships")
-	if err != nil {
-		log.Println(err)
-	}
-	driversByWins, err := functions.GetDriversByAchievements(app.AppConfig.Database, "wins")
-	if err != nil {
-		log.Println(err)
-	}
-	driversByPodiums, err := functions.GetDriversByAchievements(app.AppConfig.Database, "podiums")
-	if err != nil {
-		log.Println(err)
-	}
-	driversByPoles, err := functions.GetDriversByAchievements(app.AppConfig.Database, "pole_positions")
-	if err != nil {
-		log.Println(err)
-	}
-
-	// all teams
-	allTeamsByChampionships, err := functions.GetAllTeamsByNumberAchievements(app.AppConfig.Database, "championships")
-	if err != nil {
-		log.Println(err)
-	}
-	allTeamsByWins, err := functions.GetAllTeamsByNumberAchievements(app.AppConfig.Database, "wins")
-	if err != nil {
-		log.Println(err)
-	}
-	allTeamsByPodiums, err := functions.GetAllTeamsByNumberAchievements(app.AppConfig.Database, "podiums")
-	if err != nil {
-		log.Println(err)
-	}
-	allTeamsByPoles, err := functions.GetAllTeamsByNumberAchievements(app.AppConfig.Database, "poles")
-	if err != nil {
-		log.Println(err)
-	}
-
 	// tracks
 	currentTracks, err := functions.GetCurrentTracks(app.AppConfig.Database)
 	if err != nil {
@@ -68,24 +30,20 @@ func (app *HandlerRepository) Home(w http.ResponseWriter, r *http.Request) {
 	}
 
 	data["currentDrivers"] = currentDrivers
-
 	data["currentTeams"] = currentTeams
-
 	data["currentTracks"] = currentTracks
-
-	data["driverChampionships"] = driversByChampionships
-	data["driverWins"] = driversByWins
-	data["driverPodiums"] = driversByPodiums
-	data["driverPoles"] = driversByPoles
-
-	data["allTeamsChampionships"] = allTeamsByChampionships
-	data["allTeamsWins"] = allTeamsByWins
-	data["allTeamsPodiums"] = allTeamsByPodiums
-	data["allTeamsPoles"] = allTeamsByPoles
 
 	err = render.RenderTemplate(w, "home.page.tmpl", &models.TemplateData{
 		Data: data,
 	})
+	if err != nil {
+		log.Println(err)
+	}
+}
+
+// Drivers is the handler for the drivers page
+func (app *HandlerRepository) Drivers(w http.ResponseWriter, r *http.Request) {
+	err := render.RenderTemplate(w, "drivers.page.tmpl", &models.TemplateData{})
 	if err != nil {
 		log.Println(err)
 	}

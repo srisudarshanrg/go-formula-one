@@ -1,25 +1,25 @@
-id,name,length,number_corners,number_straights,number_drs_zones,year,country
-1,Bahrain International Circuit,5.412,15,4,3,2004,Bahrain
-2,Jeddah Corniche Circuit,6.174,27,3,3,2021,Saudi Arabia
-3,Albert Park Circuit,5.278,14,4,4,1996,Australia
-4,Suzuka International Racing Course,5.807,18,2,1,1987,Japan
-5,Shanghai International Circuit,5.451,16,2,2,2004,China
-6,Miami International Autodrome,5.412,19,3,3,2022,United States
-7,Imola Circuit,4.909,19,2,1,1980,Italy
-8,Circuit de Monaco,3.337,19,1,1,1950,Monaco
-9,Circuit Gilles Villeneuve,4.361,14,4,3,1978,Canada
-10,Circuit de Barcelona-Catalunya,4.675,16,2,2,1991,Spain
-11,Red Bull Ring,4.318,10,3,2,1970,Austria
-12,Silverstone Circuit,5.891,18,4,2,1950,United Kingdom
-13,Hungaroring,4.381,14,2,1,1986,Hungary
-14,Circuit de Spa-Francorchamps,7.004,19,2,2,1925,Belgium
-15,Circuit Zandvoort,4.259,14,2,2,1952,Netherlands
-16,Monza Circuit,5.793,11,4,2,1950,Italy
-17,Baku City Circuit,6.003,20,2,2,2016,Azerbaijan
-18,Marina Bay Street Circuit,5.063,23,2,3,2008,Singapore
-19,Circuit of the Americas,5.513,20,2,2,2012,United States
-20,Autódromo Hermanos Rodríguez,4.304,17,2,2,1963,Mexico
-21,Interlagos Circuit,4.309,15,3,2,1973,Brazil
-22,Las Vegas Strip Circuit,6.120,17,4,2,2023,United States
-23,Lusail International Circuit,5.380,16,2,3,2004,Qatar
-24,Yas Marina Circuit,5.281,21,2,2,2009,United Arab Emirates
+id,name,length,number_corners,number_straights,number_drs_zones,year,country,image
+1,Bahrain International Circuit,5.412,15,4,3,2004,Bahrain,"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Bahrain_Circuit"
+2,Jeddah Corniche Circuit,6.174,27,3,3,2021,Saudi Arabia,"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Saudi_Arabia_Circuit"
+3,Albert Park Circuit,5.278,14,4,4,1996,Australia,"https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Australia_Circuit.png"
+4,Suzuka International Racing Course,5.807,18,2,1,1987,Japan,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnDe83pBK6x-SSehOV_ld4UCEU_Su7GdaAGw&s"
+5,Shanghai International Circuit,5.451,16,2,2,2004,China,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp9cJIFSEJ1VBK-bRNfSsh4Ygf757gpwf_TQ&s"
+6,Miami International Autodrome,5.412,19,3,3,2022,United States,"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Miami_Circuit"
+7,Imola Circuit,4.909,19,2,1,1980,Italy,"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Emilia_Romagna_Circuit"
+8,Circuit de Monaco,3.337,19,1,1,1950,Monaco,"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Monaco_Circuit"
+9,Circuit Gilles Villeneuve,4.361,14,4,3,1978,Canada,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpambdt-02lR14IPVEKUjOnrYB5GvYnW968g&s"
+10,Circuit de Barcelona-Catalunya,4.675,16,2,2,1991,Spain,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP8fwRZFKGMYwGXuD5fTTUxklxLqysPT96jg&s"
+11,Red Bull Ring,4.318,10,3,2,1970,Austria,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWOUhG8fJe9WxFzY6ygOVYP3t8o3agkyXL_g&s"
+12,Silverstone Circuit,5.891,18,4,2,1950,United Kingdom,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmS3HMsodDjsUWQJcZQBVBYXvOhIr1Kr26yg&s"
+13,Hungaroring,4.381,14,2,1,1986,Hungary,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyd0bO7MjgXXwx6n-gIVn01HDShFnDxVE89g&s"
+14,Circuit de Spa-Francorchamps,7.004,19,2,2,1925,Belgium,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ajIb6EJa1mkZpxsN8-CFCQXm0hrfpA8KCg&s"
+15,Circuit Zandvoort,4.259,14,2,2,1952,Netherlands,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiC1aQlsE3Txt-bLc5FVEJysyP8WdcpCTYBQ&s"
+16,Monza Circuit,5.793,11,4,2,1950,Italy,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTivfeYg3c14DiGkZwF0q45sdCBKcbD0kpCiw&s"
+17,Baku City Circuit,6.003,20,2,2,2016,Azerbaijan,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-X-25M7Se-JFSSWwJtpH2L60TTCqlOXAQZg&s"
+18,Marina Bay Street Circuit,5.063,23,2,3,2008,Singapore,"https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Singapore_Circuit.png"
+19,Circuit of the Americas,5.513,20,2,2,2012,United States,"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/USA_Circuit"
+20,Autódromo Hermanos Rodríguez,4.304,17,2,2,1963,Mexico,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOK4RBuAi3mGIQkrQ1T_NFELYi1bi7eMlLCA&s"
+21,Interlagos Circuit,4.309,15,3,2,1973,Brazil,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnnYaFxroZAei35TmSeos3SeyPRpJxDKX1vw&s"
+22,Las Vegas Strip Circuit,6.120,17,4,2,2023,United States,"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Las_Vegas_Circuit"
+23,Lusail International Circuit,5.380,16,2,3,2004,Qatar,"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Qatar_Circuit"
+24,Yas Marina Circuit,5.281,21,2,2,2009,United Arab Emirates,"https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Abu_Dhabi_Circuit"

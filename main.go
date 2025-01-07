@@ -78,6 +78,7 @@ func routes() http.Handler {
 
 	// routes for get requests
 	mux.Get("/", handlers.Repository.Home)
+	mux.Get("/drivers", handlers.Repository.Drivers)
 
 	// routes for post requests
 

@@ -232,11 +232,11 @@ func GetCurrentTracks(db *sql.DB) ([]models.CurrentTracks, error) {
 	for rows.Next() {
 		var (
 			id, length, numberCorners, numberStraights, numberDRSZones, year int
-			name, country                                                    string
+			name, country, image                                             string
 			createdAt, updatedAt                                             interface{}
 		)
 
-		err = rows.Scan(&id, &name, &length, &numberCorners, &numberStraights, &numberDRSZones, &year, &country, &createdAt, &updatedAt)
+		err = rows.Scan(&id, &name, &length, &numberCorners, &numberStraights, &numberDRSZones, &year, &country, &image, &createdAt, &updatedAt)
 		if err != nil {
 			return nil, err
 		}
@@ -250,10 +250,10 @@ func GetCurrentTracks(db *sql.DB) ([]models.CurrentTracks, error) {
 			NumberDRSZones:  numberDRSZones,
 			Year:            year,
 			Country:         country,
+			Image:           image,
 			CreatedAt:       createdAt,
 			UpdatedAt:       updatedAt,
 		})
-
 	}
 	return tracks, nil
 }

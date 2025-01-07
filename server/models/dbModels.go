@@ -72,6 +72,7 @@ type CurrentTracks struct {
 	NumberDRSZones  int
 	Year            int
 	Country         string
+	Image           string
 	CreatedAt       interface{}
 	UpdatedAt       interface{}
 }

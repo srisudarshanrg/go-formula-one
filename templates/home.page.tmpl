@@ -5,7 +5,7 @@
 {{end}}
 
 {{define "css"}}
-    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/home.css.css">
 {{end}}
 
 {{define "content"}}
@@ -63,13 +63,35 @@
             {{$tracks := index .Data "currentTracks"}}
             <div class="all-tracks" style="margin-top: 1%;">
                 {{range $track := $tracks}}
-                    <div class="track" style="margin-top: 1%;">
-                        <h5>{{$track.Name}}</h5>
+                    <div class="modal fade" id="trackModal-{{$track.ID}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content text-bg-dark">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">{{$track.Name}}</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #fff;"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="{{$track.Image}}" alt="{{$track.Name}}" style="width: 100%; border-radius: 10px;">
+                                <h5 style="margin-top: 3%;">Length: <span style="font-weight: 350;">{{$track.Length}} km</span></h5>
+                                <h5>Number of Corners: <span style="font-weight: 350;">{{$track.NumberCorners}}</span></h5>
+                                <h5>Number of Straights: <span style="font-weight: 350;">{{$track.NumberStraights}}</span></h5>
+                                <h5>Number of DRS Zones: <span style="font-weight: 350;">{{$track.NumberDRSZones}}</span></h5>
+                                <h5>Year Joined F1: <span style="font-weight: 350;">{{$track.Year}}</span></h5>
+                                <h5>Country: <span style="font-weight: 350;">{{$track.Country}}</span></h5>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
                     </div>
+                    <button class="track" data-bs-toggle="modal" data-bs-target="#trackModal-{{$track.ID}}">
+                        <div style="margin-top: 1%;">
+                            <h5>{{$track.Name}}</h5>
+                        </div>
+                    </button>
                 {{end}}
             </div>
         </div>
     </div>
-
-    <hr>
 {{end}}
